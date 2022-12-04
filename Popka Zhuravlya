@@ -1,0 +1,19 @@
+static void StrMaxPos(string str, out char Max, out int Pos) 
+            { 
+                Max = str[0]; Pos = 0; 
+                for (int i = 0; i < str.Length; i++) 
+                { 
+                    if (str[i] > Max) 
+                    { 
+                        Max = str[i]; 
+                        Pos = i; 
+                    } 
+                } 
+            } 
+            string str = "abcdefg123"; 
+            char Max; int Pos; 
+            StrMaxPos(str, out Max, out Pos); 
+            Console.WriteLine("Исходная строка - " + str); 
+            Console.WriteLine("символ с наибольшим номером в кодовой таблице - " + Max); 
+            Console.WriteLine("номер позиции символа с наибольшим номером в кодовой таблице - " + Pos); 
+            Console.ReadLine(); 
