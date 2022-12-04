@@ -11,9 +11,10 @@ static void StrMaxPos(string str, out char Max, out int Pos)
                 } 
             } 
             string str = "abcdefg123"; 
-            char Max; int Pos; 
+            char Max; 
+            int Pos; 
             StrMaxPos(str, out Max, out Pos); 
             Console.WriteLine("Исходная строка - " + str); 
-            Console.WriteLine("символ с наибольшим номером в кодовой таблице - " + Max); 
-            Console.WriteLine("номер позиции символа с наибольшим номером в кодовой таблице - " + Pos); 
+            Console.WriteLine("Символ с наибольшим номером в кодовой таблице - " + Max); 
+            Console.WriteLine("Номер позиции символа с наибольшим номером в кодовой таблице - " + Pos); 
             Console.ReadLine(); 
